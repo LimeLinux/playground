@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+   <Name>slcak-desktop</Name>
+   <Homepage>https://slack.com/</Homepage>
+   <Packager>
+       <Name>okan acar</Name>
+       <Email>acarokan55@gmail.com</Email>
+   </Packager>
+   <License> Slack Technologies </License>
+   <IsA>app:gui</IsA>
+   <Summary>slack for desktop</Summary>
+   <Description>slack for desktop</Description>
+   <Archive type="binary" sha1sum="0e71f6f0449f7da0ecf5aaff0c19445a50a124e9">
+                    https://downloads.slack-edge.com/linux_releases/slack-desktop-2.3.4-amd64.deb</Archive>
+   <BuildDependencies>
+       <Dependency>binutils</Dependency>
+   </BuildDependencies>
+</Source>
+<Package>
+   <Name>slack</Name>
+    <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+        </RuntimeDependencies>
+   <Files>
+       <Path fileType="config">/etc</Path>
+       <Path fileType="library">/usr/lib/</Path>
+       <Path fileType="executable">/usr/bin</Path>
+       <Path fileType="data">/usr/share</Path>
+      
+   </Files>
+</Package>
+<History>
+  <Update release="1">
+       <Date>2016-12-23</Date>
+       <Version>2.3.4</Version>
+       <Comment>ilk yayın</Comment>
+       <Name>okan acar</Name>
+       <Email>acarokan55@gmail.com</Email>
+   </Update>
+</History>
+
+
+
+
+</PISI>
+ 
+ 
